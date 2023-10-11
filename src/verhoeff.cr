@@ -34,7 +34,7 @@ module Verhoeff
     len = num_str.size
 
     len.times do |i|
-      c = D[c][P[((i + 1) % 8)][num_str[len - i - 1].to_i - '0'.to_i]]
+      c = D[c][P[((i + 1) % 8)][num_str[len - i - 1].to_i]]
     end
 
     INV[c]
@@ -49,7 +49,7 @@ module Verhoeff
     len = num_str.size
 
     len.times do |i|
-      c = D[c][P[(i % 8)][num_str[len - i - 1].to_i - '0'.to_i]]
+      c = D[c][P[(i % 8)][num_str[len - i - 1].to_i]]
     end
 
     c == 0
