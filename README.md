@@ -20,7 +20,10 @@ An implementation of the [verhoeff algorithm](https://en.wikibooks.org/wiki/Algo
 require "verhoeff"
 
 puts Verhoeff.generate_checksum(1234)  # => 0
-puts Verhoeff.validate_verhoeff(12340) # => true
+puts Verhoeff.validate(12340)          # => true
+
+puts Verhoeff.generate_checksum("1234")  # => 0
+puts Verhoeff.validate("12340")          # => true
 ```
 
 ## Contributors

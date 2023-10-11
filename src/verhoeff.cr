@@ -44,7 +44,7 @@ module Verhoeff
     generate_checksum num.to_s
   end
 
-  def self.validate_verhoeff(num_str : String) : Bool
+  def self.validate(num_str : String) : Bool
     c = 0
     len = num_str.size
 
@@ -55,7 +55,7 @@ module Verhoeff
     c == 0
   end
 
-  def self.validate_verhoeff(num : Int) : Bool
-    validate_verhoeff num.to_s
+  def self.validate(num : Int) : Bool
+    validate num.to_s
   end
 end
